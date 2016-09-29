@@ -1,0 +1,8 @@
+" remove the left and right scrollbars in macvim
+set guioptions-=r
+set guioptions-=L
+
+" graphical appearance setting
+set background=dark
+set guifont=Hack:h13
+colorscheme wombat

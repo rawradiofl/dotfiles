@@ -1,0 +1,58 @@
+
+
+" Set vim to autoread files changed on disk
+set autoread
+
+" Sane tab behavior
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+" set relative numbering as default behavior
+set relativenumber
+
+
+" Make things auto-center
+nmap G Gzz
+nmap n nzz
+nmap N Nzz
+nmap } }zz
+nmap { {zz
+
+"quick pairs
+imap <leader>' ''<ESC>i
+imap <leader>" ""<ESC>i
+imap <leader>( ()<ESC>i
+imap <leader>[ []<ESC>i
+
+" Toggle autospell
+nnoremap <silent> <leader><leader>s :set spell!<CR>
+nnoremap <silent> <leader><leader>fs :FixWhitespace<CR>
+
+" setup word wrap toggle
+nnoremap <leader>tw :set wrap!<cr>
+
+" NERDTree
+nnoremap <leader>n :NERDTreeToggle<cr>
+"autocmd vimenter * NERDTree
+"autocmd vimenter * wincmd p
+
+" Relative linenumber toggle
+nnoremap <leader>nt :set relativenumber!<cr>
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set relativenumber
+
+" Remap the colon key for normal mode to aviod having to hit shift
+nnoremap ; :
+nnoremap : ;
+
+" use the system clipboard
+set cb=unnamed
+
+" for using vim as a man page reader
+let $PAGER=''
+
+" Appearance settings
+set background=dark
+set guifont=Hack:h13
+" color fu
+
+colorscheme atom

@@ -1,0 +1,12 @@
+if &shell =~# 'fish$'
+    set shell=bash
+endif
+
+let mapleader = ","
+
+" Airline config
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
+au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown
+
