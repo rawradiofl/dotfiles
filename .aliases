@@ -1,0 +1,10 @@
+alias gg='git status -s'
+alias vi='vim'
+alias glg='git log --graph --oneline --all --decorate'
+alias ls='ls -G'
+alias l='ls'
+alias la='ls -a'
+alias ll='ls -al'
+alias lh='ls -Alh'
+alias icd='cd  ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
+
