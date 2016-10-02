@@ -3,6 +3,9 @@
 " Set vim to autoread files changed on disk
 set autoread
 
+" set vim to auto save a file when leaving the buffer
+set autowrite
+
 " Sane tab behavior
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
@@ -41,8 +44,8 @@ autocmd InsertEnter * :set norelativenumber
 autocmd InsertLeave * :set relativenumber
 
 " Remap the colon key for normal mode to aviod having to hit shift
-nnoremap ; :
-nnoremap : ;
+" nnoremap ; :
+" nnoremap : ;
 
 " use the system clipboard
 set cb=unnamed
@@ -52,7 +55,10 @@ let $PAGER=''
 
 " Appearance settings
 set background=dark
-set guifont=Hack:h13
+set guifont=Hack:h16
 " color fu
 
 colorscheme atom
+
+
+

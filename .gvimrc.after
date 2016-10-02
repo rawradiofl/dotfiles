@@ -4,5 +4,5 @@ set guioptions-=L
 
 " graphical appearance setting
 set background=dark
-set guifont=Hack:h13
+set guifont=Hack:h16
 colorscheme wombat
