@@ -7,7 +7,7 @@ set autoread
 set autowrite
 
 " Sane tab behavior
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 " set relative numbering as default behavior
 set relativenumber
@@ -32,9 +32,14 @@ nnoremap <silent> <leader><leader>fs :FixWhitespace<CR>
 
 " setup word wrap toggle
 nnoremap <leader>tw :set wrap!<cr>
+nnoremap <leader>lb :set linebreak!<cr>
 
 " NERDTree
 nnoremap <leader>n :NERDTreeToggle<cr>
+
+" The following two commands will start vim with NERDTree open and move focus
+" to the main window.
+"
 "autocmd vimenter * NERDTree
 "autocmd vimenter * wincmd p
 
@@ -43,7 +48,7 @@ nnoremap <leader>nt :set relativenumber!<cr>
 autocmd InsertEnter * :set norelativenumber
 autocmd InsertLeave * :set relativenumber
 
-" Remap the colon key for normal mode to aviod having to hit shift
+" Remap the colon key for normal mode to avoid having to hit shift
 " nnoremap ; :
 " nnoremap : ;
 
@@ -53,9 +58,15 @@ set cb=unnamed
 " for using vim as a man page reader
 let $PAGER=''
 
+"folding settings
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
+
 " Appearance settings
 set background=dark
-set guifont=Hack:h16
+set guifont=Hack:h13
 " color fu
 
 colorscheme atom
