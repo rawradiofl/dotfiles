@@ -8,5 +8,8 @@ let mapleader = ","
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown
+" python autocomplete via pydiction
+let g:pydiction_location = '/Users/w4raw/.janus/pydiction/complete-dict'
 
+au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} setf markdown
+au BufRead,BufNewFile *.cmake,CMakeLists.txt setf cmake
